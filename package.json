@@ -1,0 +1,44 @@
+{
+  "name": "multiuser-balls",
+  "version": "1.0.0",
+  "description": "An experiment to combine physics, UI and data visualization elements in a multiuser environment.",
+  "homepage": "https://multiuser-balls.glitch.me/",
+  "keywords": [
+    "node",
+    "glitch",
+    "multiuser",
+    "physics",
+    "balls"
+  ],
+  "author": "pschroen",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pschroen/multiuser-balls"
+  },
+  "bugs": {
+    "url": "https://github.com/pschroen/multiuser-balls/issues"
+  },
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "rollup -c",
+    "build": "rollup -c",
+    "dev": "concurrently --names \"ROLLUP,HTTP\" -c \"bgBlue.bold,bgGreen.bold\" \"rollup -c -w -m inline\" \"node server.js\"",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@alienkitty/alien.js": "alienkitty/alien.js#dev",
+    "@alienkitty/space.js": "alienkitty/space.js#dev",
+    "express": "latest",
+    "express-ws": "latest",
+    "oimophysics": "saharan/OimoPhysics",
+    "three": "latest"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "latest",
+    "concurrently": "latest",
+    "rollup": "latest",
+    "rollup-plugin-bundleutils": "latest"
+  }
+}
