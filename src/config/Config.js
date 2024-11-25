@@ -1,12 +1,15 @@
-export const isMobile = !!navigator.maxTouchPoints;
-export const isTablet = isMobile && Math.max(window.innerWidth, window.innerHeight) > 1000;
-export const isPhone = isMobile && !isTablet;
-export const isHighQuality = navigator.hardwareConcurrency > 4 || (!navigator.hardwareConcurrency && !isTablet);
-
+export var isMobile;
+export var isTablet;
+export var isPhone;
+export var isHighQuality;
 export var isOrbit;
 export var isDebug;
 
 if (typeof window !== 'undefined') {
+	isMobile = !!navigator.maxTouchPoints;
+	isTablet = isMobile && Math.max(window.innerWidth, window.innerHeight) > 1000;
+	isPhone = isMobile && !isTablet;
+	isHighQuality = navigator.hardwareConcurrency > 4 || (!navigator.hardwareConcurrency && !isTablet);
 	isOrbit = /[?&]orbit/.test(location.search);
 	isDebug = /[?&]debug/.test(location.search);
 }
