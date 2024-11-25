@@ -31,17 +31,17 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@alienkitty/alien.js": "alienkitty/alien.js#dev",
-    "@alienkitty/space.js": "alienkitty/space.js#dev",
-    "express": "latest",
-    "express-ws": "latest",
+    "@alienkitty/alien.js": "github:alienkitty/alien.js",
+    "@alienkitty/space.js": "github:alienkitty/space.js",
+    "express": "^4.21.1",
+    "express-ws": "^5.0.2",
     "oimophysics": "saharan/OimoPhysics",
-    "three": "latest"
+    "three": "^0.170.0"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "13.1.3",
-    "concurrently": "7.0.0",
-    "rollup": "2.68.0",
-    "rollup-plugin-bundleutils": "1.2.4"
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "concurrently": "^7.6.0",
+    "rollup": "^2.79.2",
+    "rollup-plugin-bundleutils": "^1.2.6"
   }
 }
