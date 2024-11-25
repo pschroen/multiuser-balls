@@ -5,7 +5,7 @@ A follow-up experiment to Multiuser Blocks. Multiuser Balls is an experiment to 
 [https://multiuser-balls.glitch.me/](https://multiuser-balls.glitch.me/)  
 [https://multiuser-balls.glitch.me/?observer&orbit](https://multiuser-balls.glitch.me/?observer&orbit)
 
-## Keyboard shortcuts
+#### Keyboard shortcuts
 
 **Esc**: Toggle details.  
 **Control-0**: Toggle UI.  
