@@ -39,9 +39,9 @@
     "three": "latest"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "latest",
-    "concurrently": "latest",
-    "rollup": "latest",
-    "rollup-plugin-bundleutils": "latest"
+    "@rollup/plugin-node-resolve": "13.1.3",
+    "concurrently": "7.0.0",
+    "rollup": "2.68.0",
+    "rollup-plugin-bundleutils": "1.2.4"
   }
 }
