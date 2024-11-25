@@ -19,6 +19,9 @@
   "bugs": {
     "url": "https://github.com/pschroen/multiuser-balls/issues"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "type": "module",
   "main": "server.js",
   "scripts": {
