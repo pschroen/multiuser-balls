@@ -179,6 +179,7 @@ export class ScenePhysicsController extends OimoPhysicsController {
 		// Update and prune
 		Object.keys(this.pointer).forEach(id => {
 			if (id === this.id) {
+				this.ui.header.color.setData(Data.getUser(id));
 				this.pointer[id].info.setData(Data.getUserData(id));
 				return;
 			}
@@ -232,7 +233,7 @@ export class ScenePhysicsController extends OimoPhysicsController {
 
 				this.pointer[id].info = this.ui.detailsUsers.add(new DetailsUser());
 			} else {
-				// store.observer = true;
+				store.observer = true;
 
 				this.ui.info.animateIn();
 			}
@@ -242,7 +243,9 @@ export class ScenePhysicsController extends OimoPhysicsController {
 			this.resolve();
 		}
 
-		this.ui.header.color.setData(Data.getUser(id));
+		if (store.observer) {
+			this.ui.header.color.setData(Data.getUser(id));
+		}
 	};
 
 	onBuffer = ({ array }) => {
