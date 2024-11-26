@@ -179,6 +179,10 @@ export class PreloaderView extends Interface {
 		const style = formatColor(value);
 
 		this.timeout = delayedCall(200, () => {
+			if (!this.colorPicker) {
+				return;
+			}
+
 			if (style) {
 				this.colorPicker.setValue(style, false);
 
