@@ -399,7 +399,7 @@ const force = new Vector3();
 const resetOrientation = [0, 0, 0, 1];
 const resetVelocity = [0, 0, 0];
 
-const timestep = 1000 / 61;
+const timestep = 1000 / 59;
 const byteLength = 8 * 4; // 8 * float32 for buffer size
 const startIndex = 1 + byteLength * 100; // event + size * balls
 
