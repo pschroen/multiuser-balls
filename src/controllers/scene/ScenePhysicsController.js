@@ -49,11 +49,7 @@ export class ScenePhysicsController extends OimoPhysicsController {
 		this.prev = 0;
 		this.fps = 0;
 
-		// Promise with resolvers
-		// this.promise
-		// this.resolve
-		// this.reject
-		Object.assign(this, Promise.withResolvers());
+		this.promise = new Promise(resolve => this.resolve = resolve);
 	}
 
 	init() {
