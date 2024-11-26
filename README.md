@@ -30,6 +30,7 @@ OimoPhysics
 
 Additional UI elements  
 Clustered lighting  
+Implement Nvidia PhysX WASM server-side  
 
 <br>
 
