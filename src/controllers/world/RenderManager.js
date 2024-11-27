@@ -37,6 +37,7 @@ export class RenderManager {
 		this.datamoshAmount = 0;
 		this.datamoshLossy = 1;
 		this.datamoshDamping = 0.96;
+		this.firstMosh = true;
 
 		// Bloom
 		this.luminosityThreshold = 0.1;
@@ -400,7 +401,13 @@ export class RenderManager {
 
 			// Datamosh pass
 			if (this.datamoshAmount) {
-				this.datamoshMaterial.uniforms.tOld.value = this.datamosh.read.texture;
+				if (this.firstMosh) {
+					this.firstMosh = false;
+					this.datamoshMaterial.uniforms.tOld.value = renderTargetB.texture;
+				} else {
+					this.datamoshMaterial.uniforms.tOld.value = this.datamosh.read.texture;
+				}
+
 				this.datamoshMaterial.uniforms.tNew.value = renderTargetB.texture;
 				this.datamoshMaterial.uniforms.uAmount.value = this.datamoshAmount;
 				this.screen.material = this.datamoshMaterial;
