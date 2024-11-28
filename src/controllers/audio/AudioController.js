@@ -56,7 +56,6 @@ export class AudioController {
 				flam.updateMatrixWorld();
 
 				const strength = clamp(smootherstep(force, -1, 12), 0, 1);
-				if (strength === 1) console.log('flam', force, strength);
 				flam.sound.gain.set(strength * 0.7);
 				flam.sound.playbackRate.set(clamp(0.8 + strength * 0.4, 0.8, 1.2));
 				flam.sound.play();
