@@ -80,11 +80,11 @@ export class PanelController {
 			},
 			{
 				type: 'color',
-				// value: this.scene.background,
-				value: RenderManager.currentBackground,
+				value: this.scene.background,
+				// value: RenderManager.currentBackground,
 				callback: value => {
-					// this.scene.background.copy(value);
-					RenderManager.currentBackground.copy(value);
+					this.scene.background.copy(value);
+					// RenderManager.currentBackground.copy(value);
 
 					Stage.root.style.setProperty('--bg-color', `#${value.getHexString()}`);
 
