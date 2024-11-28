@@ -121,9 +121,12 @@ function remove(ws) {
 	}
 
 	if (ws._mouse !== null) {
-		resetMouse(ws._mouse);
+		// Reset after fade out
+		setTimeout(() => {
+			resetMouse(ws._mouse);
 
-		mousePool.put(ws._mouse);
+			mousePool.put(ws._mouse);
+		}, 1000);
 	}
 }
 
