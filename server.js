@@ -126,7 +126,7 @@ function remove(ws) {
 			resetMouse(ws._mouse);
 
 			mousePool.put(ws._mouse);
-		}, 1000);
+		}, interval);
 	}
 }
 
