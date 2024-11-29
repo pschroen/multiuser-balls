@@ -140,7 +140,7 @@ export class InstancedBalls extends Group {
 			mesh.setMatrixAt(i, object.matrix);
 		}
 
-		mesh.computeBoundingSphere();
+		// mesh.computeBoundingSphere();
 
 		this.mesh = mesh;
 	}
