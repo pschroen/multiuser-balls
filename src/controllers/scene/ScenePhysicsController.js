@@ -415,10 +415,10 @@ export class ScenePhysicsController extends OimoPhysicsController {
 							occMesh.setMatrixAt(j, this.object.matrix);
 
 							object.instanceMatrix.needsUpdate = true;
-							object.computeBoundingSphere();
+							// object.computeBoundingSphere();
 
 							occMesh.instanceMatrix.needsUpdate = true;
-							occMesh.computeBoundingSphere();
+							// occMesh.computeBoundingSphere();
 						} else {
 							this.object.scale.setScalar(1);
 
@@ -427,7 +427,7 @@ export class ScenePhysicsController extends OimoPhysicsController {
 							object.setMatrixAt(j, this.object.matrix);
 
 							object.instanceMatrix.needsUpdate = true;
-							object.computeBoundingSphere();
+							// object.computeBoundingSphere();
 						}
 
 						index += 8;
