@@ -1,6 +1,6 @@
 {
   "name": "multiuser-balls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An experiment to combine physics, UI and data visualization elements in a multiuser environment.",
   "homepage": "https://multiuser-balls.glitch.me/",
   "keywords": [
