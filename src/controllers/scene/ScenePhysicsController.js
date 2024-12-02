@@ -447,9 +447,14 @@ export class ScenePhysicsController extends OimoPhysicsController {
 	};
 
 	animateIn = () => {
-		tween(this, { progress: 1 }, 1000, 'easeInOutExpo', 2000, () => {
-			this.object.position.copy(this.point);
+		this.motion({
+			isDown: false,
+			x: this.point.x,
+			y: this.point.y,
+			z: this.point.z
+		});
 
+		tween(this, { progress: 1 }, 1000, 'easeInOutExpo', 2000, () => {
 			this.motion({
 				isDown: false,
 				x: this.point.x,
@@ -457,7 +462,14 @@ export class ScenePhysicsController extends OimoPhysicsController {
 				z: this.point.z
 			});
 
-			delayedCall(50, () => {
+			delayedCall(200, () => {
+				this.motion({
+					isDown: false,
+					x: this.point.x,
+					y: this.point.y,
+					z: this.point.z
+				});
+
 				this.animatedIn = true;
 			});
 		});
