@@ -140,6 +140,21 @@ function broadcast(ws, data) {
 	}
 }
 
+function idle() {
+	const idleTime = Date.now() - 1800000; // 30 * 60 * 1000
+
+	for (let i = 0, l = clients.length; i < l; i++) {
+		const client = clients[i];
+
+		if (client._idle === 0) {
+			client._idle = Date.now();
+		} else if (client._idle < idleTime) {
+			client.terminate();
+			console.log('IDLE:', client._id);
+		}
+	}
+}
+
 function users(ws) {
 	broadcast(ws, getUsers());
 }
@@ -232,25 +247,13 @@ app.ws('/', (ws, request) => {
 });
 
 setInterval(() => {
-	const idleTime = Date.now() - 1800000; // 30 * 60 * 1000
-
-	for (let i = 0, l = clients.length; i < l; i++) {
-		const client = clients[i];
-
-		if (client._idle === 0) {
-			client._idle = Date.now();
-		} else if (client._idle < idleTime) {
-			client.terminate();
-			console.log('IDLE:', client._id);
-		}
-	}
-
+	idle();
 	users();
 }, interval);
 
 //
 
-const listener = app.listen(process.env.PORT, '0.0.0.0', () => {
+const listener = app.listen(process.env.PORT, () => {
 	console.log(`Listening on port ${listener.address().port}`);
 });
 
@@ -395,7 +398,7 @@ for (let i = 0; i < 100; i++) {
 
 //
 
-import { performance } from 'perf_hooks';
+import { performance } from 'node:perf_hooks';
 
 const force = new Vector3();
 
