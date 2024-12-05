@@ -79,7 +79,7 @@ export class App {
 			},
 			details: {
 				background: true,
-				title: 'Multiuser Balls'.replace(/[\s.]+/g, '_'),
+				title: 'Multiuser Balls'.replace(/[\s.-]+/g, '_'),
 				content: [
 					{
 						content: /* html */ `
