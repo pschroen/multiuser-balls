@@ -2,10 +2,10 @@
   "name": "multiuser-balls",
   "version": "1.0.2",
   "description": "An experiment to combine physics, UI and data visualization elements in a multiuser environment.",
-  "homepage": "https://multiuser-balls.glitch.me/",
+  "homepage": "https://multiuser-balls.cyberspace.app/",
   "keywords": [
     "node",
-    "glitch",
+    "cyberspace",
     "multiuser",
     "physics",
     "balls"

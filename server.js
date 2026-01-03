@@ -1,7 +1,5 @@
 /**
  * @author pschroen / https://ufo.ai/
- *
- * Remix of https://glitch.com/edit/#!/multiuser-blocks
  */
 
 import express from 'express';

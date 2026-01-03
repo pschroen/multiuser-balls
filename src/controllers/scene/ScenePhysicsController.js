@@ -79,7 +79,7 @@ export class ScenePhysicsController extends OimoPhysicsController {
 		const port = Number(location.port) > 1000 ? `:${location.port}` : '';
 		const protocol = location.protocol.replace('http', 'ws');
 		const server = `${protocol}//${location.hostname}${port}/${location.search}`;
-		// const server = 'wss://multiuser-balls.glitch.me';
+		// const server = 'wss://multiuser-balls.cyberspace.app';
 
 		this.thread = new Thread({
 			imports: [

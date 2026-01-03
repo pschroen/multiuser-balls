@@ -2,8 +2,8 @@
 
 A follow-up experiment to Multiuser Blocks. Multiuser Balls is an experiment to combine physics, UI and data visualization elements in a multiuser environment.
 
-[https://multiuser-balls.glitch.me/](https://multiuser-balls.glitch.me/)  
-[https://multiuser-balls.glitch.me/?observer&orbit](https://multiuser-balls.glitch.me/?observer&orbit)
+[https://multiuser-balls.cyberspace.app/](https://multiuser-balls.cyberspace.app/)  
+[https://multiuser-balls.cyberspace.app/?observer&orbit](https://multiuser-balls.cyberspace.app/?observer&orbit)
 
 #### Keyboard shortcuts
 
@@ -14,8 +14,8 @@ There is also a way to show the trackers with the UI hidden, press **Esc** to sh
 
 #### Dev notes
 
-This is a remix of Multiuser Blocks  
-[https://glitch.com/edit/#!/multiuser-blocks](https://glitch.com/edit/#!/multiuser-blocks)
+This is a fork of Multiuser Blocks  
+[https://github.com/pschroen/multiuser-blocks](https://github.com/pschroen/multiuser-blocks)
 
 Alien.js MVC design pattern  
 [https://github.com/alienkitty/alien.js](https://github.com/alienkitty/alien.js)

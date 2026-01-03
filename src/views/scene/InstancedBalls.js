@@ -31,7 +31,7 @@ export class InstancedBalls extends Group {
 			// loadTexture('assets/textures/uv.jpg'),
 			loadTexture('assets/textures/pbr/pitted_metal_basecolor.jpg'),
 			loadTexture('assets/textures/pbr/pitted_metal_normal.jpg'),
-			// https://occlusion-roughness-metalness.glitch.me/
+			// https://occlusion-roughness-metalness.cyberspace.app/
 			loadTexture('assets/textures/pbr/pitted_metal_orm.jpg'),
 			loadTexture('assets/textures/pbr/pitted_metal_height.jpg')
 		]);
