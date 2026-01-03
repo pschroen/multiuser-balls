@@ -30,7 +30,7 @@
   "dependencies": {
     "@alienkitty/alien.js": "alienkitty/alien.js",
     "@alienkitty/space.js": "alienkitty/space.js",
-    "express": "^4.21.1",
+    "express": "^5.2.1",
     "express-ws": "^5.0.2",
     "oimophysics": "saharan/OimoPhysics",
     "three": "^0.170.0"
